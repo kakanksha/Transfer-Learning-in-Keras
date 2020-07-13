@@ -11,7 +11,7 @@ Transfer learning is a machine learning method where a model developed for a tas
 </pre>
    <li><h3>MODEL 2</h3></li>
   <pre>
-1. Use <a href='https://www.tensorflow.org/api_docs/python/tf/keras/applications/VGG16'>VGG-16</a> pretrained network without Fully Connected layers and initilize all the weights with Imagenet trained weights.
+1. Use <a href='https://www.tensorflow.org/api_docs/python/tf/keras/applications/VGG16' >VGG-16</a> pretrained network without Fully Connected layers and initilize all the weights with Imagenet trained weights.
 2. After VGG-16 network without FC layers, don't use FC layers, use Conv layers only as Fully Connected layer. Any FC layer can be converted to a CONV layer. This conversion will reduce the number of trainable parameters in FC layers. For example, an FC layer with K=4096 that is looking at some input volume of size 7×7×512 can be equivalently expressed as a CONV layer with F=7,P=0,S=1,K=4096. In other words, we are setting the filter size to be exactly the size of the input volume, and hence the output will simply be 1×1×4096 since only a single depth column “fits” across the input volume, giving identical result as the initial FC layer.
 3. Final architecture will be <b>INPUT --> VGG-16 without Top layers(FC) --> 2 Conv Layers identical to FC --> Output Layer</b>
 4. Train only last 2 Conv layers identical to FC layers, 1 output layer. Don't train the VGG-16 network. 
@@ -26,7 +26,7 @@ Transfer learning is a machine learning method where a model developed for a tas
 
 <h2>DATA</h2>
 <pre>
-1. Download all the data in this folder https://drive.google.com/open?id=1Z4TyI7FcFVEx8qdl4jO9qxvxaqLSqoEu.
+1. Download all the data in this folder <a href=https://drive.google.com/open?id=1Z4TyI7FcFVEx8qdl4jO9qxvxaqLSqoEu>.
 It contains two file both images and labels. The label file list the images and their categories in the following format:
 <b>path/to/the/image.tif,category</b> where the categories are numbered 0 to 15, in the following order:
    <b>0 letter

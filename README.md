@@ -23,3 +23,26 @@ Transfer learning is a machine learning method where a model developed for a tas
 1. Use same network as Model-2 '<b>INPUT --> VGG-16 without Top layers(FC) --> 2 Conv Layers identical to FC --> Output Layer</b>' and train only last 6 layers of VGG-16 network, 2 Conv layers identical to FC layers, 1 Output layer.
 </pre>
 </ol>
+
+<h2>DATA</h2>
+<pre>
+1. Download all the data in this folder https://drive.google.com/open?id=1Z4TyI7FcFVEx8qdl4jO9qxvxaqLSqoEu.
+It contains two file both images and labels. The label file list the images and their categories in the following format:
+<b>path/to/the/image.tif,category</b> where the categories are numbered 0 to 15, in the following order:
+   <b>0 letter
+   1 form
+   2 email
+   3 handwritten
+   4 advertisement
+   5 scientific report
+   6 scientific publication
+   7 specification
+   8 file folder
+   9 news article
+   10 budget
+   11 invoice
+   12 presentation
+   13 questionnaire
+   14 resume
+   15 memo</b>
+    
